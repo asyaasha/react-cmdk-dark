@@ -126,7 +126,6 @@ function CommandPalette({
 
   return (
     <div
-      className="dark"
       onKeyDown={(e) => {
         if (
           e.key === "ArrowDown" ||

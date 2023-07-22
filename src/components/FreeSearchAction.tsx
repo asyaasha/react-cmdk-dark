@@ -15,7 +15,7 @@ export default function FreeSearchAction({
 
   return (
     <ListItem index={0} icon="MagnifyingGlassIcon" showType={false} {...props}>
-      <span className="max-w-md truncate dark:text-white">
+      <span className="max-w-md truncate text-white">
         {label} <span className="font-semibold">"{search}"</span>
       </span>
     </ListItem>
