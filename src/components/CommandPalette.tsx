@@ -126,6 +126,7 @@ function CommandPalette({
 
   return (
     <div
+      className="dark"
       onKeyDown={(e) => {
         if (
           e.key === "ArrowDown" ||
@@ -183,7 +184,7 @@ function CommandPalette({
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-h-full bg-white dark:bg-gray-900 shadow-lg rounded-lg max-w-xl flex flex-col overflow-hidden divide-y dark:divide-gray-800">
+                  <Dialog.Panel className="w-full max-h-full bg-gray-900 shadow-lg rounded-lg max-w-xl flex flex-col overflow-hidden divide-y divide-gray-800">
                     <PageContext.Provider
                       value={{
                         setSearchPrefix,

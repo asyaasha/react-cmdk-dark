@@ -90,6 +90,7 @@ textarea {
   font-size: 100%;
   line-height: inherit;
   color: inherit;
+  background: inherit;
   margin: 0;
   padding: 0;
 }
