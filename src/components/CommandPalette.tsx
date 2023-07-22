@@ -169,7 +169,7 @@ function CommandPalette({
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <div className="fixed inset-0 bg-gray-900 bg-opacity-80" />
+              <div className="fixed inset-0 bg-black bg-opacity-80" />
             </Transition.Child>
 
             <div className="fixed inset-0 overflow-y-auto flex items-center justify-center">
@@ -183,7 +183,7 @@ function CommandPalette({
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-h-full bg-gray-900 shadow-lg rounded-lg max-w-xl flex flex-col overflow-hidden divide-y divide-gray-800">
+                  <Dialog.Panel className="w-full max-h-full bg-gray-900 shadow-lg rounded-lg max-w-xl flex flex-col overflow-hidden divide-y divide-gray-800 border-solid border-1 border-gray-800">
                     <PageContext.Provider
                       value={{
                         setSearchPrefix,
@@ -199,7 +199,7 @@ function CommandPalette({
                         ref={inputRef}
                       />
                     </PageContext.Provider>
-
+                    {search && (
                     <div
                       className="flex-1 overflow-y-auto focus:outline-none p-2 space-y-4"
                       tabIndex={-1}
@@ -220,7 +220,7 @@ function CommandPalette({
                         </PageContext.Provider>
                       </OpenContext.Provider>
                     </div>
-
+                    )}
                     {footer}
                   </Dialog.Panel>
                 </Transition.Child>
